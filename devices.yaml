@@ -1,0 +1,17 @@
+devices:
+  - ip: clab-basic-R1
+    username: admin
+    password: admin
+    model: arista_eos
+  - ip: clab-basic-R2
+    username: admin
+    password: admin
+    model: arista_eos
+  - ip: clab-basic-R3
+    username: admin
+    password: admin
+    model: arista_eos
+  - ip: devnetsandboxiosxe.cisco.com
+    username: admin
+    password: C1sco12345
+    model: cisco_iosxe
