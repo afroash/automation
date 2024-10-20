@@ -5,6 +5,7 @@ import (
 	"os"
 	"time"
 
+	"github.com/afroash/ashlog"
 	"github.com/scrapli/scrapligo/driver/options"
 	"github.com/scrapli/scrapligo/platform"
 	"gopkg.in/yaml.v2"
@@ -25,7 +26,8 @@ type Config struct {
 func readConfig(filename string) (*Config, error) {
 	data, err := os.ReadFile(filename)
 	if err != nil {
-		return nil, fmt.Errorf("failed to read file: %w", err)
+		ashlog.LogError("failed to read file", err)
+		return nil, err
 	}
 
 	var config Config

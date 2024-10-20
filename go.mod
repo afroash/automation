@@ -3,6 +3,7 @@ module github.com/afroash/automation
 go 1.22.4
 
 require (
+	github.com/afroash/ashlog v1.0.2
 	github.com/scrapli/scrapligo v1.3.2
 	gopkg.in/yaml.v2 v2.4.0
 )
